@@ -1,0 +1,708 @@
+:root{
+  --light-color:rgb(20,66,164);
+  --dark-color: #03256c;
+  --font-color: #535353;
+} 
+
+/* --------------------  Header Styles -------------------- */
+
+
+header{
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100px;
+  opacity: 0.95;
+}
+
+header p{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+header span {
+  color: var(--light-color);
+}
+
+header a{
+  color: var(--dark-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* -------------------- Navigation menu -------------------- */
+
+
+#navbar {
+   background: white; 
+  width: 100%;
+}
+ #navbar ul {
+   align-items: center;
+   display:flex;
+   flex-flow: column wrap;
+   list-style-type: none;
+   }
+
+#navbar li{
+ line-height: 1.4em;
+}
+
+
+#navbar ul li a  {
+  color: var(--dark-color);
+  font-weight: 400;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+#navbar ul li a:hover
+{
+  color: var(--light-color);
+}
+
+
+
+/* -------------------- Welcome Section -------------------- */
+
+
+#welcome-section {
+  background: url("https://drive.google.com/uc?export=view&id=1WXD-xa3Q5yeq-MBJwWjlgVclFDBrzRvg") center no-repeat white;
+  background-size: cover;
+  margin-top: 200px;
+  height: 100vh;
+}
+
+.welcome-content{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+#welcome-section h1{
+  background-color: var(--light-color);
+  color: var(--dark-color);
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align:center;
+}
+
+#welcome-section h2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+}
+
+/* -------------------- Back to top button  -------------------- */
+
+.back-to-top {
+  align-items: center;
+  background: var(--dark-color);
+  border-radius: 50%;
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  position: fixed;
+  bottom: 10px;
+  height: 50px;
+  right: 10px;
+  text-decoration: none;
+  width: 50px;
+  z-index: 999;
+}
+
+/* -------------------- Info Section -------------------- */
+
+ .info-container {
+  color: var(--dark-color);
+  font-size: 1em;
+  padding: 100px 0;
+ }
+
+.info-container h3{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+ .info-container p {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.8em;
+    padding: 0 15px;
+   margin: 0 5%;
+ }
+
+/* -------------------- Portfolio Section -------------------- */
+
+ #projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.title-section{
+  background: var(--light-color);
+  color: var(--dark-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.project-tile{
+
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 0;
+ width: 100%;
+}
+
+.project-info h3{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.project-info {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  width: 100%;
+}
+
+#projects figure{
+  margin: 20px 0 0 0;
+  width: 80%;
+}
+
+
+#projects img{
+  margin: 5px 0;
+  width: 100%;
+}
+
+.project-details{
+  text-align: justify;
+}
+
+.languages {
+  padding: 0 40px;
+  text-align: center;
+}
+
+#project1{
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+#project2{
+  background: white;
+  color: var(--dark-color);
+}
+
+#project3{
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 15px 0;
+}
+
+.portfolio-button {
+  background: var(--dark-color);
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--light-color);
+  font-size: 0.813em;
+  font-weight: 400;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio-button a{
+  color: var(--light-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+#all-projects-div {
+  align-items: center;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+}
+
+#all-projects-div .portfolio-button {
+  margin-bottom: 30px;
+}
+
+#all-projects-div p{
+  color: var(--dark-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* -------------------- About Section -------------------- */
+
+#about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px 0 35px 0;
+}
+
+#about h1{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.about-image-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.about-image-title{
+  background: var(--light-color);
+  color: var(--dark-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 2;
+}
+
+.about-image{
+  height: auto;
+  width: 70%;
+}
+
+#about-image img{
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
+ }
+
+ .about-info {
+  color: var(--dark-color);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  display: block;
+  line-height: 1.7;
+  text-align: justify;
+   font-size: 1em;
+  width: 80%;
+ }
+
+ .about-info a {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+ }
+
+#skills{
+  padding-bottom: 150px;
+}
+
+#skills .title-container {
+  background: var(--light-color);
+  color: var(--dark-color);
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 50px;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#skills .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+ #skills p{
+  align-items: center; 
+  color: var(--dark-color);
+  display: flex;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 400;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+ }
+
+ #skills i{
+  align-items: center;
+  border-radius: 20%;
+  background: var(--light-color);
+  color: var(--dark-color);
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+  height: 1.5em;
+  margin-bottom: 17px;
+  padding: 0;
+  width: 1.5em;
+ }
+
+/* -------------------- Footer Styles -------------------- */
+
+footer {
+  align-items: center;
+  background: var(--light-color);
+  display: flex;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.copyright {
+  color: var(--dark-color);
+  text-align: center;
+}
+
+
+/* social details */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons p  {
+  align-items: center;
+  border-radius: 50%;
+  background: var(--dark-color);
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  height: 2em;
+  margin-right: 7px;
+  padding: 0;
+  width: 2em;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.social-icons a:hover {
+  color: var(--light-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icons p:hover{
+  opacity: 0.9;
+}
+
+/* -------------------- Styles for Tablets -------------------- */
+
+@media only screen and (min-width: 768px) {
+  
+  /*header section*/
+
+   header{
+    align-items: start;
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100px;
+   }
+  
+  header p{
+    font-size: 2em;
+    margin-top:0;
+    padding-left: 50px;
+    width: 50%; 
+   }
+  
+  #navbar {
+  display:flex;
+  font-size: 1.125em;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 50%;
+ 
+}
+
+
+#navbar ul{
+  background-color: white;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding-left: 0;
+  width: 100%;
+}
+  
+   #navbar{
+    padding-top:20px;
+    right:0;
+  }
+
+  #navbar a{
+    font-size: 1.2em;
+  }
+  
+#navbar ul li a:hover{
+    color: var(--light-color);
+  }
+  
+  /* -------------------- Welcome section  -------------------- */
+
+  #welcome-section {
+    height: 100vh;
+    margin-top: 100px;
+  }
+  
+  .welcome-content{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+  }
+
+  
+  /* -------------------- Back to top button  -------------------- */
+
+.back-to-top {
+  font-size: 2.5em;
+  bottom: 30px;
+  height: 60px;
+  right: 30px;
+  width: 60px;
+}
+  /* -------------------- Info Section -------------------- */
+
+ .info-container p {
+   margin: 0 10%;
+ }
+  
+  /* -------------------- Portfolio Section -------------------- */
+
+
+  .project-tile{
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+ .portfolio-projects {
+   display: flex;
+   flex-flow: row wrap;
+ } 
+ .project-info {
+    padding-bottom: 15px;
+    width: 50%;
+  }
+
+  #projects figure{
+    width: 50%;
+  }
+ 
+  #projects img {
+    width: 90%;
+  }
+
+  #projects h2 {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .project-details{
+    margin: 0 30px;
+  }
+
+
+  .portfolio-button {
+    font-size: 0.9em;
+  }
+  
+  /* -------------------- About Page -------------------- */
+
+  #about {
+    padding-bottom: 50px;
+  }
+
+  #about h1 {
+    padding-bottom: 50px;
+  }
+  #about figure{
+    margin:0;
+  }
+
+  .about-info {
+    font-size: 1.4em;
+    margin: 0 20px;
+    width: 80%;
+  }
+
+  #about-image {
+    width:45%;
+  }
+
+  .about-image-title{
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    z-index: 2;
+  }
+
+  #skills{
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px 0 100px 0;
+  }
+
+  #skills .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*padding: 0 100px 40px 100px;*/
+    width: 70%;
+  }
+
+  #skills i{
+    font-size:4em;
+  }
+
+/* -------------------- Footer -------------------- */
+  .social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  
+}
+
+/* -------------------- Styles for Laptop & Desktop --------------- */
+
+@media only screen and (min-width: 992px) {
+  
+ 
+  /*welcome-section*/
+
+
+  #welcome-section h1 {
+    background: var(--light-color);
+    font-size: 4em;
+  }
+
+  #welcome-section h2{
+    background: var(--dark-color);
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  
+  #projects h2 {
+    font-size: 2.6em;
+  }
+  #projects h3 {
+    font-size: 2em;
+  }
+  
+  #projects p {
+    font-size: 1.4em;
+  }
+  
+  .portfolio-button a {
+    font-size: 1em;
+  }
+
+  .info-container h3{
+    font-size: 2em;
+  }
+
+  .info-container p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+ 
+
+  .about-info p, #skills p {
+    font-size: 1.4em;
+  }
+ 
+ 
+
+   /* -------------------- Portfolio Section -------------------- */
+
+   
+  .project-details {
+    padding: 0 80px;
+  }
+
+  .portfolio-button {
+    font-size: 1.2em;
+  }
+
+/* -------------------- About Section -------------------- */
+ 
+  #about h1{
+      font-size: 3em;
+  }
+
+  #about-image {
+    width: 50%;
+  }
+
+  .about-image-title {
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+    z-index: 2;
+  }
+
+  .about-info p{
+  font-size: 1.4em;
+  padding: 0 100px 0 50px;
+  }
+  
+}
